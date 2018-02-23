@@ -1,0 +1,28 @@
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    max-width: 300px;
+}
+img {
+    max-width: 300px;
+    max-height: 40000px;
+    background-color: grey;
+}
+.caption {
+    display: block;
+}
+
+body {
+  background-image: url(images/bg.png);
+  background-repeat: repeat;
+}
