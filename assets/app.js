@@ -76,8 +76,12 @@ $(document).ready(function() {
   $('#add-character').on('click', function(event) {
     event.preventDefault();
     var tv = $('#character-input').val().trim();
-    tvCharacters.push(tv);
-    renderButtons();
+    console.log(tv);
+    if (tv.length > 0) {
+      tvCharacters.push(tv);
+      renderButtons();
+
+    };
   });
 
   // calling the displayCharacterGifs function whenever a button with the class character-btn is clicked

@@ -5,28 +5,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon" />
 
     <title>tvshowsGiphy</title>
   </head>
   <body>
 
     <div class="container">
+      <div class="jumbotron col-lg-11 col-md-11 col-sm-12 col-xs-12 mx-auto mb-0">
+        <h1 class="text-center">Click on a TV Character</h1>
+        <div class="text-center" id="character-buttons"></div>
 
-<!--button dump  -->
-      <div id="character-buttons">
       </div>
 
-      <form id="character-form">
-        <label for="character-input">Add a TV Character</label>
-        <input type="text" id="character-input">
-        <br>
+      <div class="container text-center">
+        <div class="jumbotron col-lg-4 mx-auto mb-0">
 
-        <input id="add-character" type="submit" value="Click to Add">
-      </form>
+          <form id="character-form">
+            <label class="h2" for="character-input">Add a TV Character:</label>
+            <input type="text" id="character-input">
+            <br>
+            <br>
+            <input class="btn-primary" id="add-character" type="submit" value="Click to Add">
+          </form>
+        </div>
 
-      <div class="container" id="characters">
-        <!-- giphy dump -->
       </div>
+
+
+        <div class="jumbotron col-lg-11 col-md-11 col-sm-12 col-xs-12 mx-auto">
+          <h1 class="text-center">Click on the Giphy!</h1>
+          <div class="container" id="characters"></div>
+        </div>
+
 
     </div>
 
