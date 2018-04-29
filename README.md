@@ -8,4 +8,9 @@
 
 - You can click on each Giphy to start the animation and click again to stop the animation.
 
-- Thanks
+## Technology Used
+1. HTML
+1. CSS
+1. JavaScript
+1. JQuery
+1. Giphy API
